@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - version 8</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Introduction to Programming Notes
+  </title>
+</head>
+<body>
+   <div class="TOC">
+     <h1>Table of Contents</h1>
+     <ol>
+       <li class="TOC-lesson">
+         <a href="#lesson-1">
+           Lesson 1: The Basics of the Web & HTML
+         </a> 
+         <ul>
+           <li>
+             <a href="#lesson-1-1">
+               World Wide Web
+             </a>
+           </li>
+           <li>
+             <a href="#lesson-1-2">
+               HTML
+             </a>
+           </li>
+           <li>
+             <a href="#lesson-1-3">
+               HTML Markup
+             </a>
+           </li>
+           <li>
+             <a href="#lesson-1-4">
+               Inline v.s. Block Elements
+             </a> 
+           </li>
+         </ul>
+       </li>  
+       <li class="TOC-lesson">
+         <a href="#lesson-2">
+           Lesson 2: Creating a Structured Document with HTML
+         </a>
+         <ul>
+           <li>
+             <a href="#lesson-2-1">
+               The "Tree-Like" Structure of HTML
+             </a>
+           </li>
+           <li>
+             <a href="#lesson-2-2">
+               Boxes
+             </a>
+           </li>
+         </ul>
+       </li>  
+       <li class="TOC-lesson">
+         <a href="#lesson-3">
+           Lesson 3: Adding CSS Style to HTML Structure
+         </a>
+         <ul>
+           <li>
+             <a href="#lesson-3-1">
+               CSS
+             </a>
+           </li>
+           <Li>
+             <a href="#lesson-3-2">
+               Specificity
+             </a>
+           </Li>
+           <li>
+             <a href="#lesson-3-3">
+               Inheritance
+             </a>
+           </li>
+           <li>
+             <a href="#lesson-3-4">
+               Avoiding Repitition
+             </a>
+           </li>
+         </ul>
+       </li> 
+     </ol>
+   </div>
+   <h1>
+     An Introduction to Programming:
+     <br>
+     Important Concepts
+   </h1>
+   <div class="lesson">
+     <h2 id="lesson-1">
+       Lesson 1: The Basics of the Web & HTML
+     </h2>
+     <div class="concept" id="lesson-1-1">
+       <div class="concept-title">
+         World Wide Web
+       </div>
+       <div class="concept-description">
+         <ul>
+           <li>
+             A collection of HTML documents made up of 
+             <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage
+           </li>
+           <li>
+             Everything found online (docs., images, videos)
+             is glued together by HTML
+           </li>
+           <li>
+             Hyper <b>Links</b> connect all the HTML documents 
+             together making the World Wide
+             Web, <em>web</em>-like
+           </li>
+         </ul>
+         <p>
+           I open my favorite <b>browser</b> and and type in 
+           www.Udacity.com and hit go. My browser sends a request via 
+           the Internet using a protocol called HTTP to the 
+           <b>servers</b> hosting Udacity's files. The servers
+           respond with the requested files, which my browser then 
+           displays. For more information, check out
+           <a href = "https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">
+           this video.</a>
+         </p>  
+       </div>
+     </div>
+     <div class="concept" id="lesson-1-2">
+       <div class="concept-title">
+         HTML
+       </div>
+       <div class="concept-description">
+         <p>
+           HTML is a language. It has its own words (tags) and rules for 
+           how those words can be put togehter. 
+           HTML is made up of 4 important components:
+         </p> 
+         <ol>
+           <li>
+             Text Content (The actual text you see.)
+           </li>
+           <li>
+             Markup (How the text looks, color, arangment, etc.)
+           </li>
+           <li>
+             References to Other Documents (Images, 
+             Videos, Games etc.)
+           </li>
+           <li>
+            Links to Other Pages (Hence, the 
+            <em>web</em>-like structure of the Web.)
+           </li>
+         </ol>
+       </div>
+     </div>
+     <div class="concept" id="lesson-1-3">
+       <div class="concept-title">
+         HTML Markup
+       </div>
+       <div class="concept-description">
+         <p>
+           HTML Markup is made up of <b>tags</b>. These tags
+           tell the computer <em>how</em> to display the text. A tag 
+           <em>usually</em> consists of both an opening and a closing tag,
+           with the contents in between, and the entire entity is
+           referred to as an <b>element</b>. Some tags, like the 
+           image tag, do not contain any text content to be displayed 
+           and therefore do not have an end tag. 
+           A tag can have none, one, or multiple
+           <b>attributes</b> inside of it. <a href = "https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">
+           This Video</a> gives a good overview.
+         </p> 
+       </div>
+     </div>
+     <div class="concept" id="lesson-1-4">
+       <div class="concept-title">
+         Inline v.s. Block Elements
+       </div>
+       <div class="concept-description">
+         <p>
+           HTML elements can be either inline, or block. Block elements 
+           form an invisible box around the contents inside of them. 
+           This box can be adjusted in both height and width. Inline 
+           elements simply appear in line with the text. 
+         </p> 
+       </div>
+     </div>
+   </div>
+   <div class="lesson">
+     <h2 id="lesson-2">
+       Lesson 2: Creating a Structured Document with HTML
+     </h2>
+     <div class="concept" id="lesson-2-1">
+       <div class="concept-title">
+         The "Tree-Like" Structure of HTML
+       </div>
+       <div class="concept-description">
+         <p>
+           The DOM (<b>D</b>ocument <b>O</b>bject <b>M</b>odel) refers 
+           to the tree-like structure of a webpage. This tree-like, or 
+           branching structure is formed because HTML can have one tag 
+           nested inside another tag nested inside another tag and so on. 
+           When viewed with developer tools in a browser, this structure 
+           can be seen by expanding the triangle at the beginning of 
+           the first element (the html tag) and continuing to expand 
+           each tag until there is nothing left but text. What this triangle really represents though, is a box. You can think 
+           of a well structured webpage kind of like one of those pretty 
+           nesting dolls; but instead of the containers being doll shaped, 
+           the containers are box shaped. There is one big doll, or box 
+           (the html tag) and it contains all the other boxes, 
+           or elements, neatly boxed away inside of it. 
+         </p>  
+       </div>
+     </div>
+     <div class="concept" id="lesson-2-2">
+       <div class="concept-title">
+         Boxes
+       </div>
+       <div class="concept-description">
+         <p>
+           Everything on the web is made up of boxes. Even circles 
+           are boxes; they have just been styled, using CSS, to <em>look</em>
+           like circles. This is becasue a browser sees a webpage 
+           as a series of boxes, nested inside of one another. When reading an 
+           HTML document as text, you can see a wave of changing
+           indentations running along the left side. These indentations
+           indicate how deeply the element's corresponding "box" is nested 
+           inside of the entire structure. This structure not only organizes 
+           all the elements within a page but it also makes the code 
+           easier to read. It also allows developers to easily 
+           re-arrange elements on the page.
+         </p>  
+       </div>
+     </div>
+   </div> 
+   <div class="lesson">
+     <h2 id="lesson-3">
+       Lesson 3: Adding CSS Style to HTML Structure
+     </h2>
+     <div class="concept" id="lesson-3-1">
+       <div class="concept-title">
+         CSS
+       </div>
+       <div class="concept-description">
+         <p>
+           CSS stands for Cascading Style Sheets. Like HTML, 
+           it is also a language and it controls the look, 
+           or style, of a webpage. One HTML file can reference 
+           just one, or several CSS files in order to create the
+           final, visible look, or style, of the page. You can 
+           think of CSS as a set of rules that tell the browser 
+           how to display certain elements. CSS allows programmers 
+           to group similar elements together by giving them 
+           the same class name and then specifying a style that 
+           should apply to all the elements with that same class 
+           name. 
+         </p> 
+       </div>
+     </div>
+     <div class="concept" id="lesson-3-2">
+       <div class="concept-title">
+         Specificity
+       </div>
+       <div class="concept-description">
+         <p>
+           CSS rules can be very general or very specific. 
+           Think of it in terms of laws, there are national laws,
+           state laws, municipality laws and maybe even your own
+           house rules.  In CSS you can write rules that apply to 
+           the entire page, or just to one section, or just one 
+           box, or just one element. However, in CSS, the most 
+           specific rule is applied to every element, hence the
+           word Cascading.The browser goes deeper and deeper 
+           into the set of rules to find the one that best 
+           describes the elements, and then applies that rule. 
+           This idea is known as inheritance. 
+         </p> 
+       </div>
+     </div>
+     <div class="concept" id="lesson-3-3">
+       <div class="concept-title">
+        Inheritance
+       </div>
+       <div class="concept-description">
+         <p>
+           Inheritance is a feature of CSS that helps developers 
+           avoid repetition. It relies on the tree-like, or 
+           nesting-box structure of HTML to operate. This 
+           structure creates an ancestor-descendant relationship 
+           in the elements and is what allows properties to be 
+           applied not only to a specified element, but also to 
+           its descendants. This means that descendant elements 
+           may inherit properties from any ancestor elements 
+           enclosing them. Inheritance is what prevents 
+           developers from having to declare certain properties 
+           over and over again. 
+         </p> 
+       </div>
+     </div>
+     <div class="concept" id="lesson-3-4">
+       <div class="concept-title">
+         Avoiding Repitition
+       </div>
+       <div class="concept-description">
+         <p>
+           Avoiding repetition when writing code is important 
+           for several reasons. 
+         </p>
+         <p>
+           One, it helps prevent errors. When programmers don’t 
+           avoid repetition it leads to having to repeat the same, 
+           or just slightly different, code over and over again 
+           in many HTML elements. This leads to errors when a 
+           programmer needs to make changes to something. 
+           If they don’t meticulously make the same changes 
+           everywhere the repeated code appears, 
+           problems will arise.  
+         </p>
+         <p>
+           Two, it provides consistency. Take this webpage for 
+           example. Each lesson looks the same. By giving each 
+           lesson <span class="code">div</span> the same
+           <span class="code">class</span>, I am able to specify
+           a style for that class in only one place. Then if I 
+           need to make changes, I can go back into the style 
+           rule for that class and easily revise it any way I 
+           want; I do not have to search the entire document 
+           for each instance of that code.  
+         </p> 
+       </div>
+     </div>
+   </div>
+</body>
+</html>
+
+</body>
+
+</html>
